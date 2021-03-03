@@ -2,7 +2,7 @@
 
 namespace Lamoda\AtolClient\V3\DTO\Sell\Request\Receipt\Payment;
 
-use Paillechat\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * How you payed. In ATOL sell request.

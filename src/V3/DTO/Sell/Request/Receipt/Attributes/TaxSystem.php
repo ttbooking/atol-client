@@ -2,7 +2,7 @@
 
 namespace Lamoda\AtolClient\V3\DTO\Sell\Request\Receipt\Attributes;
 
-use Paillechat\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * Tax system for customer in ATOL sell request.

@@ -2,7 +2,7 @@
 
 namespace Lamoda\AtolClient\V4\DTO\Report;
 
-use Paillechat\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * @method static self DONE()

@@ -21,7 +21,6 @@ use Lamoda\AtolClient\V3\DTO\Sell\Request\Receipt\Payment\PaymentType;
 use Lamoda\AtolClient\V3\DTO\Sell\Request\Service;
 use Lamoda\AtolClient\V3\DTO\SellRequest;
 use Lamoda\AtolClient\V3\DTO\SellResponse;
-use Paillechat\Enum\Exception\EnumException;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
@@ -183,7 +182,7 @@ JSON
     public function dataException(): array
     {
         $items = [
-            'enum' => ['{"status":"what?"}', EnumException::class, 0],
+            'enum' => ['{"status":"what?"}', ParseException::class, ParseException::RESPONSE],
             'parse' => ['not json', ParseException::class, ParseException::RESPONSE],
             'validation' => ['{}', ValidationException::class, ValidationException::RESPONSE],
         ];

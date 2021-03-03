@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Lamoda\AtolClient\V4\DTO\Shared;
 
-use Paillechat\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * @method static self NONE()

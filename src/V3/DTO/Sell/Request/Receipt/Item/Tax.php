@@ -3,7 +3,7 @@
 namespace Lamoda\AtolClient\V3\DTO\Sell\Request\Receipt\Item;
 
 use Lamoda\AtolClient\Exception\VatException;
-use Paillechat\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * Tax for ATOL sell receipt.

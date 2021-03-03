@@ -2,7 +2,7 @@
 
 namespace Lamoda\AtolClient\V3\DTO\Report\Response;
 
-use Paillechat\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * Status of ATOL report response.

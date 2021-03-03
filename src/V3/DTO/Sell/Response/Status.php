@@ -2,7 +2,7 @@
 
 namespace Lamoda\AtolClient\V3\DTO\Sell\Response;
 
-use Paillechat\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * ATOL sell response status.

@@ -6,7 +6,7 @@ use JMS\Serializer\Context;
 use JMS\Serializer\GraphNavigator;
 use JMS\Serializer\Handler\SubscribingHandlerInterface;
 use JMS\Serializer\VisitorInterface;
-use Paillechat\Enum\Enum;
+use MyCLabs\Enum\Enum;
 
 /**
  * Adds support of "Enum" type for JMS.
@@ -48,7 +48,7 @@ class EnumHandler implements SubscribingHandlerInterface
      * @param mixed            $data
      * @param array            $type
      *
-     * @throws \Paillechat\Enum\Exception\EnumException
+     * @throws \UnexpectedValueException
      *
      * @return Enum
      */
