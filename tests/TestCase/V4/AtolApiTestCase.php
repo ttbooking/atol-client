@@ -248,8 +248,8 @@ abstract class AtolApiTestCase extends TestCase
                         1000.1,
                         PaymentMethod::FULL_PAYMENT(),
                         new Vat(
-                            VatType::VAT118(),
-                            152.55
+                            VatType::VAT120(),
+                            166.68
                         )
                     ))
                         ->setMeasurementUnit('шт.')
@@ -303,8 +303,8 @@ abstract class AtolApiTestCase extends TestCase
                         1000.1,
                         PaymentMethod::FULL_PAYMENT(),
                         new Vat(
-                            VatType::VAT118(),
-                            152.55
+                            VatType::VAT120(),
+                            166.68
                         )
                     ),
                 ],
