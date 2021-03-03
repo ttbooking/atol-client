@@ -3,10 +3,10 @@ ATOL API v3/v4 client for PHP
 
 https://online.atol.ru/
 
-[![Build Status](https://travis-ci.org/lamoda/atol-client.svg?branch=master)](https://travis-ci.org/lamoda/atol-client)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lamoda/atol-client/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lamoda/atol-client/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/lamoda/atol-client/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/lamoda/atol-client/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/lamoda/atol-client/badges/build.png?b=master)](https://scrutinizer-ci.com/g/lamoda/atol-client/build-status/master)
+[![Build Status](https://travis-ci.org/ttbooking/atol-client.svg?branch=master)](https://travis-ci.org/ttbooking/atol-client)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ttbooking/atol-client/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ttbooking/atol-client/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/ttbooking/atol-client/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ttbooking/atol-client/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/ttbooking/atol-client/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ttbooking/atol-client/build-status/master)
 
 ## Installation
 
@@ -14,12 +14,10 @@ Usage is as simple as
 
 1. Install library
 	```bash
-	composer require lamoda/atol-client
+	composer require ttbooking/atol-client
 	```
 
-2. Better to use this library with symfony: https://github.com/lamoda/atol-client-bundle
-
-3. But you can configure it manually (you will probably need some factory:
+2. Configure it (you will probably need some factory):
 	```php
 	<?php
 	
