@@ -7,6 +7,10 @@
         {
             "name": "Pavel Agaletskiy",
             "email": "pavel.agaletskiy@lamoda.ru"
+        },
+        {
+            "name": "Sergey Danilchenko",
+            "email": "s.danilchenko@ttbooking.ru"
         }
     ],
     "minimum-stability": "stable",
