@@ -63,11 +63,10 @@ class ObjectConverterTest extends TestCase
         $this->assertSame($json, $result);
     }
 
-    /**
-     * @expectedException \Lamoda\AtolClient\Exception\ParseException
-     */
     public function testGetRequestStringParseException()
     {
+        $this->expectException(\Lamoda\AtolClient\Exception\ParseException::class);
+
         /* @see ObjectConverter::assertValid() */
         $this->validator
             ->method('validate')
@@ -82,12 +81,11 @@ class ObjectConverterTest extends TestCase
         $this->objectConverter->getRequestString((object) []);
     }
 
-    /**
-     * @expectedException \Lamoda\AtolClient\Exception\ValidationException
-     * @expectedExceptionCode 2
-     */
     public function testGetRequestStringInvalid()
     {
+        $this->expectException(\Lamoda\AtolClient\Exception\ValidationException::class);
+        $this->expectExceptionCode(2);
+
         $object = (object) [];
         $errors = $this->createMock(ConstraintViolationListInterface::class);
 
@@ -128,12 +126,11 @@ class ObjectConverterTest extends TestCase
         $this->assertSame($object, $result);
     }
 
-    /**
-     * @expectedException \Lamoda\AtolClient\Exception\ParseException
-     * @expectedExceptionCode 2
-     */
     public function testGetResponseObjectParseException()
     {
+        $this->expectException(\Lamoda\AtolClient\Exception\ParseException::class);
+        $this->expectExceptionCode(2);
+
         /* @see ObjectConverter::deserialize() */
         $this->serializer
             ->method('deserialize')
@@ -142,12 +139,11 @@ class ObjectConverterTest extends TestCase
         $this->objectConverter->getResponseObject('class', 'json');
     }
 
-    /**
-     * @expectedException \Lamoda\AtolClient\Exception\ValidationException
-     * @expectedExceptionCode 2
-     */
     public function testGetResponseObjectInvalid()
     {
+        $this->expectException(\Lamoda\AtolClient\Exception\ValidationException::class);
+        $this->expectExceptionCode(2);
+
         $errors = $this->createMock(ConstraintViolationListInterface::class);
 
         /* @see ObjectConverter::assertValid() */

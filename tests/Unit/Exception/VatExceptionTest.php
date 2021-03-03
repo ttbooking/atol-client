@@ -16,6 +16,6 @@ class VatExceptionTest extends TestCase
         $type = 12345;
         $exception = VatException::becauseUnknownVatValue($type);
         $this->assertInstanceOf(VatException::class, $exception);
-        $this->assertContains((string) $type, $exception->getMessage());
+        $this->assertStringContainsString((string) $type, $exception->getMessage());
     }
 }

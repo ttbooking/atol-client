@@ -15,6 +15,6 @@ class EmailOrPhoneTest extends TestCase
     {
         $constraint = new EmailOrPhone();
         $this->assertSame($constraint->getTargets(), EmailOrPhone::CLASS_CONSTRAINT);
-        $this->assertInternalType('string', $constraint->message);
+        $this->assertIsString($constraint->message);
     }
 }

@@ -27,6 +27,6 @@ class ValidationExceptionTest extends TestCase
 
         $exception = ValidationException::becauseOfValidationErrors($errors, $code);
         $this->assertInstanceOf(ValidationException::class, $exception);
-        $this->assertContains($reasonMessage, $exception->getMessage());
+        $this->assertStringContainsString($reasonMessage, $exception->getMessage());
     }
 }

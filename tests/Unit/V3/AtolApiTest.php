@@ -188,11 +188,10 @@ class AtolApiTest extends TestCase
         $this->assertSame($responseObject, $result);
     }
 
-    /**
-     * @expectedException \GuzzleHttp\Exception\GuzzleException
-     */
     public function testResponseException()
     {
+        $this->expectException(\GuzzleHttp\Exception\GuzzleException::class);
+
         /* @see AtolApi::request */
         $this->client
             ->expects($this->once())

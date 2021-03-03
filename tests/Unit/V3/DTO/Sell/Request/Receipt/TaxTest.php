@@ -41,10 +41,11 @@ class TaxTest extends TestCase
      * @param int $integer
      *
      * @dataProvider dataFromIntegerException
-     * @expectedException \Lamoda\AtolClient\Exception\VatException
      */
     public function testFromIntegerException($integer): void
     {
+        $this->expectException(\Lamoda\AtolClient\Exception\VatException::class);
+
         Tax::fromInteger($integer);
     }
 

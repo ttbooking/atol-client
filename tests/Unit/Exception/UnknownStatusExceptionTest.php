@@ -11,11 +11,10 @@ use PHPUnit\Framework\TestCase;
  */
 class UnknownStatusExceptionTest extends TestCase
 {
-    /**
-     * @expectedException \Lamoda\AtolClient\Exception\UnknownStatusException
-     */
     public function testBecauseException()
     {
+        $this->expectException(\Lamoda\AtolClient\Exception\UnknownStatusException::class);
+
         throw new UnknownStatusException();
     }
 }
