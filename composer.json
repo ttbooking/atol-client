@@ -1,5 +1,5 @@
 {
-    "name": "lamoda/atol-client",
+    "name": "ttbooking/atol-client",
     "description": "ATOL API v3/v4 client for php",
     "type": "library",
     "license": "MIT",
