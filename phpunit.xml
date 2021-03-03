@@ -15,6 +15,9 @@
     <ini name="memory_limit" value="-1"/>
     <env name="APP_ENV" value="test"/>
     <env name="APP_DEBUG" value="1"/>
+    <env name="ATOL_API_TEST_ATOL_LOGIN" value="v4-online-atol-ru"/>
+    <env name="ATOL_API_TEST_ATOL_PASSWORD" value="iGFFuihss"/>
+    <env name="ATOL_API_TEST_ATOL_GROUP_CODE" value="v4-online-atol-ru_4179"/>
   </php>
   <testsuites>
     <testsuite name="Library Unit Test Suite">
