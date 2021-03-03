@@ -11,6 +11,7 @@ use Paillechat\Enum\Enum;
  * @method static self USN_INCOME()
  * @method static self USN_INCOME_OUTCOME()
  * @method static self ENVD()
+ * @method static self ESN()
  * @method static self PATENT()
  */
 final class Sno extends Enum
@@ -19,5 +20,6 @@ final class Sno extends Enum
     protected const USN_INCOME = 'usn_income';
     protected const USN_INCOME_OUTCOME = 'usn_income_outcome';
     protected const ENVD = 'envd';
+    protected const ESN = 'esn';
     protected const PATENT = 'patent';
 }

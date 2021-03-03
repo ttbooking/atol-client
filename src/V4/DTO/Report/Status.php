@@ -5,9 +5,9 @@ namespace Lamoda\AtolClient\V4\DTO\Report;
 use Paillechat\Enum\Enum;
 
 /**
- * @method static DONE(): self
- * @method static FAIL(): self
- * @method static WAIT(): self
+ * @method static self DONE()
+ * @method static self FAIL()
+ * @method static self WAIT()
  */
 class Status extends Enum
 {

@@ -11,6 +11,7 @@ use Paillechat\Enum\Enum;
  */
 class Status extends Enum
 {
+    public const DONE = 'done';
     public const FAIL = 'fail';
     public const WAIT = 'wait';
 }

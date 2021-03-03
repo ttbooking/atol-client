@@ -20,6 +20,11 @@ use Paillechat\Enum\Enum;
  * @method static self AGENT_COMMISSION()
  * @method static self COMPOSITE()
  * @method static self ANOTHER()
+ * @method static self PROPERTY_RIGHT()
+ * @method static self NON_OPERATING_GAIN()
+ * @method static self INSURANCE_PREMIUM()
+ * @method static self SALES_TAX()
+ * @method static self RESORT_FEE()
  */
 final class PaymentObject extends Enum
 {
@@ -36,4 +41,9 @@ final class PaymentObject extends Enum
     protected const AGENT_COMMISSION = 'agent_commission';
     protected const COMPOSITE = 'composite';
     protected const ANOTHER = 'another';
+    protected const PROPERTY_RIGHT = 'property_right';
+    protected const NON_OPERATING_GAIN = 'non-operating_gain';
+    protected const INSURANCE_PREMIUM = 'insurance_premium';
+    protected const SALES_TAX = 'sales_tax';
+    protected const RESORT_FEE = 'resort_fee';
 }
