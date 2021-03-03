@@ -24,7 +24,7 @@ final class AtolApiTest extends AtolApiTestCase
      */
     private $groupCode;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

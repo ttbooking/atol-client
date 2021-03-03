@@ -205,7 +205,7 @@ class AtolApiTest extends TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->converter = $this->createMock(ObjectConverter::class);
         $this->client = $this->createMock(ClientInterface::class);

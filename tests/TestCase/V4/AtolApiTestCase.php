@@ -55,7 +55,7 @@ abstract class AtolApiTestCase extends TestCase
 
     abstract protected function setUpTestReport(): void;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
