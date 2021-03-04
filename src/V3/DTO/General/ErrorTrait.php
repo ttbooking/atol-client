@@ -2,6 +2,7 @@
 
 namespace Lamoda\AtolClient\V3\DTO\General;
 
+use JMS\Serializer\Annotation as Serializer;
 use Symfony\Component\Validator\Constraints as Assert;
 
 trait ErrorTrait
